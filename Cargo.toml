@@ -1,0 +1,33 @@
+[package]
+name = "dnsPractice"
+version = "0.1.0"
+authors = ["jitterbug"]
+edition = "2018"
+
+
+[[bin]]
+name = "server"
+path = "src/serverMain.rs"
+
+
+[dependencies]
+actix = "0.9.0"
+actix-rt = "1.0.0"
+actix-codec = "0.2.0"
+actix-files = "0.2.1"
+actix-web = "2.0.0"
+actix-web-actors = "2.0.0"
+#awc = "1.0.1"
+bytes = "0.5.3"
+env_logger = "0.7"
+futures = "0.3.1"
+#hyper = "0.13"
+serde = {version = "1.0.104", features = ["derive"]}
+serde_json = "1.0"
+
+dotenv = "0.15.0"
+config = "0.10.1"
+
+tokio = { version = "0.2", features = ["full"] }
+reqwest = { version = "0.10", features = ["json"] }
+openssl = { version = "0.10", features = ["vendored"] }
