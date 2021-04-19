@@ -1,0 +1,32 @@
+[package]
+name = "api"
+version = "0.1.0"
+authors = ["BCarlaYap <2826165+BCarlaYap@users.noreply.github.com>"]
+edition = "2018"
+
+[lib]
+name = "api_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "server"
+path = "src/bin/main.rs"
+
+[dependencies]
+thiserror = "1.0.24"
+uuid = { version = "0.8", features = ["serde", "v4"] }
+rust_decimal = "1.10.3"
+url = "2.2.1"
+warp = "0.3.1"
+dotenv = "0.15.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+parking_lot = "0.11.1"
+futures = "0.3.13"
+tokio = { version = "1.4.0", features = ["full"] }
+reqwest = { version = "0.11", features = ["json"] }
+log4rs = "1.0.0"
+log = "0.4.14"
+
+enum-position = { path = "../derive" }
+postgres-helper = { path = "../postgres" }

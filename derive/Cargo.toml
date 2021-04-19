@@ -1,0 +1,14 @@
+[package]
+name = "enum-position"
+version = "0.1.0"
+authors = ["BCarlaYap <2826165+BCarlaYap@users.noreply.github.com>"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+
+[dependencies]
+proc-macro2 = "1.0"
+syn = { version ="1.0.69", features = ["full", "extra-traits"] }
+quote = "1.0.9"

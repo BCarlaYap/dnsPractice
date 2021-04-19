@@ -1,0 +1,13 @@
+[package]
+name = "postgres-helper"
+version = "0.1.0"
+authors = ["BCarlaYap <2826165+BCarlaYap@users.noreply.github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.4.0", features = ["full"] }
+tokio-postgres = "0.7.1"
+once_cell = { version = "1.3.1" }
+log = "0.4.14"
