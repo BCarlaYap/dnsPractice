@@ -1,0 +1,15 @@
+sudo: true
+language: rust
+
+rust:
+  - nightly
+
+branches:
+ only:
+  - tokio
+  
+env:
+  global:
+    - RUST_BACKTRACE=1
+    
+cache: cargo
