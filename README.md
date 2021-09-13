@@ -29,3 +29,4 @@ sample body in json:
   ```
 * To get the providers list: `GET localhost:3030/providers`
 * To resolve: `GET localhost:3030/resolve?name=<hostname>`
+test
